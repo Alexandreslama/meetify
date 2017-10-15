@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    color: #013243
+}
+
+a {
+    color: #00E640;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #26A65B;
+    text-decoration: underline;
+}
+
+header#header {
+    background: #4183D7;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+.logo {
+    float: left;
+    max-width: 250px;
+    height: auto;
+    padding-right: 20px;
+}
+
+.thumbnail img {
+    border-radius: 2px;
+    max-width: 100%;
+    height: auto;
+}
