@@ -2,7 +2,7 @@
 
 <div id="content" class="container">
   <div class="row">
-    <h1 class="col-sm-12">Profils Récents</h1>
+    <h1 class="col-sm-12 catch">Profils Récents</h1>
   </div>
   <div class="row">
     <?php
@@ -27,8 +27,7 @@
               echo '</div>';
             }
          ?>
-        <h1><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h1>
-        <h2>Posté le <?php the_time('F jS, Y') ?></h2>
+        <h1><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h1>        
         <p><?php the_excerpt(); ?></p>
       </article>
       <?php

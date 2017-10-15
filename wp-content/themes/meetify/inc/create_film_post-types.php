@@ -1,5 +1,5 @@
 <?php 
-function ajout_custom_type_film() {
+function ajout_custom_type_profil() {
 	$post_type = "film";
 $labels = array(
         'name'               => 'Profils',
@@ -61,4 +61,4 @@ $labels = array(
 
 }
 
-add_action ('init', 'ajout_custom_type_film');
+add_action ('init', 'ajout_custom_type_profil');
