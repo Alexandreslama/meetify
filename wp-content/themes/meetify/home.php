@@ -27,7 +27,7 @@
               echo '</div>';
             }
          ?>
-        <h1><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h1>        
+        <h1><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); echo ', ';the_field('age'); echo ' ans' ?></a></h1>        
         <p><?php the_excerpt(); ?></p>
       </article>
       <?php

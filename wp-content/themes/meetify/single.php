@@ -10,7 +10,8 @@
         while (have_posts()){
             the_post();
     ?>
-    <article class="col-sm-12">
+    <article class="row">
+        <div class="col-sm-6">
         <?php 
             if(has_post_thumbnail())
             {
@@ -19,10 +20,17 @@
                 echo '</div>';
             }
          ?>
-            <h1><?php the_title(); ?></a></h1>
-            <h2>Posté le <?php the_time('F jS, Y') ?></h2>
+         </div>
+            <br>
+            <div class="col-sm-6">
+            <h1><?php the_title(); ?></a></h1>            
             <p><?php the_content(); ?></p>
+            <p> <?php echo 'Age : ' ?><?php the_field('age'); ?></p>
+            <p> <?php echo 'Sexe : ' ?><?php the_field('sexe'); ?></p>
+            </div>
+            <hr>
      </article>
+
     <?php
     }
     }
