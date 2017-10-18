@@ -18,7 +18,7 @@
     while ( $the_query->have_posts() ) {
         $the_query->the_post();
     ?>
-      <article class="col-sm-12 col-md-4">
+      <article class="col-sm-12 col-md-4 profil">
         <?php
             if(has_post_thumbnail())
             {

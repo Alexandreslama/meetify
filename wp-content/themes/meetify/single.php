@@ -11,7 +11,7 @@
             the_post();
     ?>
     <article class="row">
-        <div class="col-sm-6">
+        <div class="col-md-6 col-sm-12">
         <?php 
             if(has_post_thumbnail())
             {
@@ -22,7 +22,7 @@
          ?>
          </div>
             <br>
-            <div class="col-sm-6">
+            <div class="col-md-6 col-sm-12">
             <h1><?php the_title(); ?></a></h1>            
             <p><?php the_content(); ?></p>
             <p> <?php echo 'Age : ' ?><?php the_field('age'); ?></p>
